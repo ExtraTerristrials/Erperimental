@@ -1,12 +1,13 @@
 #include<iostream>
 using namespace std;
-long int Euclid(long int a,long int b){
-    if(b==0)
+long int Euclid(long int dividend,long int divisor){
+    if(dividend%divisor!=0)
     {
-        return a;
+        Euclid(divisor,dividend%divisor!);
     }
-    else{
-        return (Euclid(b,a%b));
+    else
+    {
+        return divisor;
     }
 }
 int main()
